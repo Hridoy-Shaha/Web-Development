@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Feedbackform</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Feedback form" />
+<meta name="description" content="Feedback form " />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="sample-feedback-form-validation.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>Feedback Form</h1>
+Use tab keys to move from one input field to the next.
+<form name='Feedback form' onSubmit="return form validtation();">
+<ul>
+ 
+<li><label for="username">Name:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+ 
+</select></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" />
+<li><label for="desc">Feedback:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+<script> const email = document.getElementById("Email");
+
+    email.addEventListener("input", function (event) {
+      if (email.validity.typeMismatch) {
+        email.setCustomValidity("I am expecting an email address!");
+        email.reportValidity();
+      } else {
+        email.setCustomValidity("");
+      }
+    });</script>
+</body>
+</html>
+
+</body>
+</html>

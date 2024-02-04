@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() { 
+        $('#slideshow > div:first')
+            .fadeOut(5000)
+            .next()
+            .fadeIn(5000)
+            .end()
+            .appendTo('#slideshow');
+    },  2000);
+</script>
+
+<style>
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+ 
+.myslides{
+    display:none
+}
+</style>
+
+<div id="slideshow">
+    <div>
+        <img src="pictures/pic1.jpeg" width="240" height="240">
+    </div>
+    <div>
+        <img src="pictures/pic2.jpeg" width="240" height="240">
+    </div> 
+    <div>
+        <img src="pictures/ pic3.jpeg" width="240" height="240">
+    </div> 
+    <div>
+        <img src="pictures/pic4.jpeg" width="240" height="240">
+    </div> 
+    <div>
+        <img src="pictures/pic5.jpeg" width="240" height="240">
+    </div>    
+</div>
+</body>
+</html>

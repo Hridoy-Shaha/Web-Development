@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - checking email</title>
+<link rel='stylesheet' href='form-style.css' type='text/css' />    
+<script> function ValidateEmail(inputText)
+    {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(inputText.value.match(mailformat))
+    {
+    alert("Valid email address!");
+    document.form1.text1.focus();
+    return true;
+    }
+    else
+    {
+    alert("You have entered an invalid email address!");
+    document.form1.text1.focus();
+    return false;
+    }
+    } </script>  
+</head>
+<body onload='document.form1.text1.focus()'>
+<div class="ValidateEmail">
+<h2>Input an Email address</h2>
+<form name="form1" action="#"> 
+
+    <tr>
+        Email Address: <input type="email" name="email" required placeholder="Enter a valid email address">
+      </tr>
+
+<td><label>Password: </label></td>    
+                <td>    
+                    <input type="password" name="password" placeholder="Password">    
+                </td>    
+            </tr>    
+<tr>    
+                <td><label>Confirm Password: </label></td>    
+                <td>    
+                    <input type="password" name="confirm_password" placeholder="Password">    
+                </td>    
+            </tr>  
+
+<li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></li>
+
+</form>
+</div>
+</body>
+</html>

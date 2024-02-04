@@ -1,0 +1,118 @@
+ 1. My opinion about this task: We should have to learn more CSS . Then we have to practice about CSS.
+
+2. Difference between id and class attribute: The difference between them is that “id” is unique in a page and can only apply to at most one element, while “class” selector can apply to multiple elements.
+
+3.There are many benefits of using CSS:
+A) Smooth Website Speed
+B) Easier to Maintain
+C) Platforms Independence
+D) Saves Times
+
+CSS Gallery for: https://devsnap.me/css-gallery
+4. CSS3 is the latest version, hence it supports responsive design. CSS cannot be split into modules. Whereas, CSS3 can be breakdown into modules. Using CSS, we cannot build 3D animation and transformation.
+
+5. One of the main reasons that inline styling is not a good choice for your application is because it does not support (or it has really poor support) for CSS features. Every application nowadays might have to end up using some selectors such as :hover , :active , :focused , etc.
+
+6. Firebug is a discontinued free and open-source web browser extension for Mozilla Firefox that facilitated the live debugging, editing, and monitoring of any website's CSS, HTML, DOM, XHR, and JavaScript.
+When we develop a page, a time when you need to change elements in your theme’s style sheet. Knowing what to change and where to find it can be the biggest hurdle, but there Firebug tool available that is the web designer’s secret weapon. The Firebug extension for Mozilla’s Firefox (and Firebug Lite for Chrome) can make short work of finding and changing css elements in your design. It overlays the rendered code of your site in a split screen so you can see and change the HTML/CSS, while being able to instantly view the change.
+
+YSlow, an open-source tool or browser extension created by Firefox, can give you answers. It is designed to analyse websites using specific performance criteria. These criteria comprise of 23 factors based on search engine Yahoo’s rules for websites that are performing optimally.
+
+7. First select file from computer then import stylesheet explorer 6 or older web browser.
+
+8: This tools helps web developer to creating stylesheet make websites more visible and good looking styling design.
+
+
+</head>
+</html>
+9. <!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 2px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+tr:hover {background-color: goldenrod;}
+</style>
+</head>
+<body>
+
+<h2>Hoverable Table</h2>
+
+<p>Move the mouse over the table rows to see the effect.</p>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$50</td>
+  </tr>
+  <tr>
+    <td>Louis</td>
+    <td>Shaha</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Hervy</td>
+    <td>Jhonson</td>
+    <td>$25000</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Hridoy</td>
+    <td>$450</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+10. <!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #666;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Input fields with color on :focus</h2>
+
+<p>Here, the input field gets a color when it gets focus (clicked on):</p>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname" value="Hridoy">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname" value="Shaha">
+</form>
+
+</body>
+</html>
+
+11. I like this website because of its color design great combination and more stylish effect . The info of the website is given in the form of beautiful costumes: https://www.webbyawards.com/about/
+

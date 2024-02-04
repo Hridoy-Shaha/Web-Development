@@ -1,0 +1,65 @@
+ 
+ <!DOCTYPE html>
+ <html>
+   
+ <head>
+     <title>
+          
+     </title>
+ </head>
+   
+ <body>
+     <h2 style="color: brown">
+         Finland/Suomi
+         
+     </h2>
+       
+      
+       
+     <p>
+         Protocol is: 
+         <span class="protocol"></span>
+     </p>
+       
+     <p>
+         Domain is: 
+         <span class="domain"></span>
+     </p>
+       
+     <p>
+         Port is: 
+         <span class="port"></span>
+     </p>
+       
+     <button onclick="getDetails()">
+         Get protocol, domain, port
+     </button>
+       
+     <script type="text/javascript">
+         function getDetails() {
+             protocol = location.protocol;
+             domain = location.hostname;
+             port = location.port;
+   
+             document.querySelector('.protocol').textContent
+                     = protocol;
+             document.querySelector('.domain').textContent
+                     = domain;
+             document.querySelector('.port').textContent
+                     = port;
+         }
+  
+       function domain(fi) {
+   let result;
+   if (domain = fi) {
+     result = 'tervetuloa';
+   } else {
+     result = 'ei tervetuloa';
+   }
+   return result;
+ }
+     </script>
+ </body>
+   
+ </html>    
+ 
